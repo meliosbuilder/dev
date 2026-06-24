@@ -6,7 +6,7 @@ class Stubs
 {
     public function parentElement(string $contentType, string $basePath)
     {
-        $stubs = array_merge($this->getElementStubs(), $this->getParentElementSubs());
+        $stubs = array_merge($this->getElementStubs(), $this->getParentElementStubs());
 
         return $this->process($stubs, $this->placeholders($contentType, $basePath));
     }
